@@ -1,0 +1,10 @@
+[Unit]
+Description=GNOME bspwm
+DefaultDependencies=no
+
+Requisite=gnome-session-initialized.target
+PartOf=gnome-session-initialized.target
+Before=gnome-session-initialized.target
+
+Requires=bspwm-gnome.service
+After=bspwm-gnome.service

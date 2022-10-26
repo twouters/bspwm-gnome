@@ -6,4 +6,5 @@ if [ $HASBUILTIN -eq 0 ]; then
 else
     BUILTINARG=""
 fi
-gnome-session $BUILTINARG --session bspwm-gnome "$@"
+
+gnome-session "$BUILTINARG" --disable-acceleration-check --session bspwm-gnome "$@"
